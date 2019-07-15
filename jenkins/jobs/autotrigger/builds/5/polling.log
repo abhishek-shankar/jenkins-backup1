@@ -1,0 +1,12 @@
+Started on Jul 13, 2019 5:22:07 PM
+Started by event from 140.82.115.0 ⇒ http://13.58.156.97:8080/github-webhook/ on Sat Jul 13 17:22:07 UTC 2019
+Using strategy: Default
+[poll] Last Built Revision: Revision b2ab390e6c1b755f2e5c95070fa82b34fb0540d5 (refs/remotes/origin/master)
+using credential 25160e03-fc19-453a-9edc-fac91096c92d
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git ls-remote -h https://github.com/abhishek-shankar/make_repo.git # timeout=10
+Found 1 remote heads on https://github.com/abhishek-shankar/make_repo.git
+[poll] Latest remote head revision on refs/heads/master is: 63623507a5f7fa6251c047ca6b36a4f242a59968
+Done. Took 0.12 sec
+Changes found

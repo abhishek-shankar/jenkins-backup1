@@ -1,0 +1,42 @@
+Started by GitHub push by abhishek-shankar
+Running as SYSTEM
+Building remotely on [8mha:////4Nq4kysbqfU1a4/IoRAp+TEiALwXrwrT13Td3cGofIa0AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUIwCCp2lrxQAAAA==[0mslave2 in workspace /home/ec2-user/jenkins/workspace/buildx
+using credential 25160e03-fc19-453a-9edc-fac91096c92d
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/abhishek-shankar/make_repo.git # timeout=10
+Fetching upstream changes from https://github.com/abhishek-shankar/make_repo.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress https://github.com/abhishek-shankar/make_repo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 43a6f04b2277d937b3fb2451cae44091c0eced92 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 43a6f04b2277d937b3fb2451cae44091c0eced92
+Commit message: "Update big.c"
+ > git rev-list --no-walk e8690fa9051424219beef688234905961107a517 # timeout=10
+[buildx] $ /bin/sh -xe /tmp/jenkins7087646166407376383.sh
++ make
+gcc -c big.c
+big.c: In function ‘big’:
+big.c:5:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("Enter three different numbers: ");
+     ^~~~~~
+big.c:5:5: warning: incompatible implicit declaration of built-in function ‘printf’
+big.c:5:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+big.c:1:1:
++#include <stdio.h>
+ void big()
+big.c:5:5:
+     printf("Enter three different numbers: ");
+     ^~~~~~
+big.c:6:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+     scanf("%lf %lf %lf", &n1, &n2, &n3);
+     ^~~~~
+big.c:6:5: warning: incompatible implicit declaration of built-in function ‘scanf’
+big.c:6:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+gcc -o ABC.exe main.o big.o fact.o palindrome.o
+Triggering a new build of [8mha:////4OD9FaYm5ZMIMztuuF6tfXUZ2usCYe3rs0+MKwvvDgm4AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/az8JP2U1IKc/Ep9AE110wvBAAAA[0mdeploy
+Triggering a new build of [8mha:////4OD9FaYm5ZMIMztuuF6tfXUZ2usCYe3rs0+MKwvvDgm4AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/az8JP2U1IKc/Ep9AE110wvBAAAA[0mdeploy
+Finished: SUCCESS

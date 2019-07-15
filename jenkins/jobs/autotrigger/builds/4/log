@@ -1,0 +1,19 @@
+Started by GitHub push by abhishek-shankar
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/autotrigger
+using credential 25160e03-fc19-453a-9edc-fac91096c92d
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/abhishek-shankar/make_repo.git # timeout=10
+Fetching upstream changes from https://github.com/abhishek-shankar/make_repo.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress https://github.com/abhishek-shankar/make_repo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision b2ab390e6c1b755f2e5c95070fa82b34fb0540d5 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b2ab390e6c1b755f2e5c95070fa82b34fb0540d5
+Commit message: "Update main.c"
+ > git rev-list --no-walk 6597b31a9c3feb3943434efe6025db593e9ec4c4 # timeout=10
+Finished: SUCCESS

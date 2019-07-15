@@ -1,0 +1,45 @@
+Started by GitHub push by abhishek-shankar
+Running as SYSTEM
+Building remotely on [8mha:////4Nq4kysbqfU1a4/IoRAp+TEiALwXrwrT13Td3cGofIa0AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUIwCCp2lrxQAAAA==[0mslave2 in workspace /home/ec2-user/jenkins/workspace/buildx
+using credential 25160e03-fc19-453a-9edc-fac91096c92d
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/abhishek-shankar/make_repo.git # timeout=10
+Fetching upstream changes from https://github.com/abhishek-shankar/make_repo.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress https://github.com/abhishek-shankar/make_repo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e8690fa9051424219beef688234905961107a517 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e8690fa9051424219beef688234905961107a517
+Commit message: "Update big.c"
+ > git rev-list --no-walk 36becabc81c2d6d3668f85706153f54e6110b833 # timeout=10
+[buildx] $ /bin/sh -xe /tmp/jenkins1106044499216299830.sh
++ make
+gcc -c big.c
+big.c: In function ‘big’:
+big.c:5:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("Enter three different numbers: ");
+     ^~~~~~
+big.c:5:5: warning: incompatible implicit declaration of built-in function ‘printf’
+big.c:5:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+big.c:1:1:
++#include <stdio.h>
+ void big()
+big.c:5:5:
+     printf("Enter three different numbers: ");
+     ^~~~~~
+big.c:6:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+     scanf("%lf %lf %lf", &n1, &n2, &n3);
+     ^~~~~
+big.c:6:5: warning: incompatible implicit declaration of built-in function ‘scanf’
+big.c:6:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+big.c: At top level:
+big.c:15:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+make: *** [makefile:6: big.o] Error 1
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

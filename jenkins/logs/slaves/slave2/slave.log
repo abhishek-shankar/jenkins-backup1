@@ -1,0 +1,3 @@
+Warning: no key algorithms provided; JENKINS-42959 disabled
+SSHLauncher{host='172.31.7.16', port=22, credentialsId='d60bea70-3afe-4d55-b9dc-40a9d710d303', jvmOptions='', javaPath='', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=210, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.KnownHostsFileKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
+[07/15/19 13:26:29] [SSH] Opening SSH connection to 172.31.7.16:22.
